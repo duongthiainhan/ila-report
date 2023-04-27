@@ -1,0 +1,32 @@
+mixin showProject(projectName, imageName, imageCaption)
+    .col-md-4.col-sm-4.col-xs-4.ila-img
+                a.swipebox(href='javascript:void(0)' title=`${projectName}`)
+                    //-img.img-responsive(src=`${projectImage}` alt='')
+                    img.img-responsive(src=`./dist/images/home/${imageName}-smail.jpg` src2=`./dist/images/home/${imageName}.jpg` zoombox='project' alt=`${imageCaption}`)
+                    .wthree-pcatn
+                        h4 #{projectName}
+
+
+.work.ila-w3layouts
+    .container
+        .col-md-12.work-ila-left
+            h3.ila-title 
+            //- include ../_work.pug
+            //- include ../_education.pug
+            //- p (pls click to the image to view the description)
+            p.title1 CRM Dashboard
+            p 
+                | Track sales activity (from the most overview to the most detailed), show all information from Leads to Sales and even after sales.
+                | Review Sales KPIs, Marketing KPIs, Target and deepdive for business purpose
+                .clearfix
+        .col-md-12
+            ul
+                img(src='./dist/images/home/biCrmdashboard1 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard1.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard2 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard2.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard3 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard3.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard4 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard4.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard5 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard5.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard6 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard6.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard6 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard7.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard8 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard8.png' zoombox='')
+                img(src='./dist/images/home/biCrmdashboard9 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biCrmdashboard9.png' zoombox='')                

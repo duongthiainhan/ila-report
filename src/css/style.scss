@@ -1,0 +1,28 @@
+// style.scss
+@import "_var.scss";
+@import "_global.scss";
+@import "reset.scss";
+@import "about.scss";
+@import "banner.scss";
+@import "service.scss";
+@import "project.scss";
+@import "work.scss";
+@import "skill.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "media.scss";
+@import "customize.scss";
+
+.hideme {
+  display: none;
+}
+
+p.title1 {
+	color: rgb(247, 136, 0);
+	font-size: 1.2em;
+}
+
+.u-center {
+	margin: 0 auto;
+	text-align: center;
+}

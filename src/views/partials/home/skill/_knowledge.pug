@@ -1,0 +1,13 @@
+mixin showKnowledge(title, description, icon)
+    .serv-wthree-row.w3layouts
+        .col-xs-3.services-w3lsleft
+            span(class=`glyphicon glyphicon-${icon}`)
+        .col-xs-9.services-w3lsright
+            h4 #{title}
+            p #{description}
+        .clearfix
+
+h3.ila-title CRM Reports
++showKnowledge('General Management', 'Lead and Pipeline management to track KPIs of Leads, Needs, Qualified Leads, Visitors, New Sales, Unsuccessful Leads', 'cog')
++showKnowledge('Telemarketing Performance', 'Track Qualified/ UnQualified Leads by Telemarketing by Day and Show details list of Lead in their Pipeline', 'star')
++showKnowledge('Sales Performance', 'Show Sales performance, Actual Sales by Channel, Source, EP and Track their pipeline details', 'stats')

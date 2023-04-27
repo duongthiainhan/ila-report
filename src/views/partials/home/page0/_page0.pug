@@ -1,0 +1,31 @@
+mixin showProject(projectName, imageName, imageCaption)
+    .col-md-4.col-sm-4.col-xs-4.ila-img
+                a.swipebox(href='javascript:void(0)' title=`${projectName}`)
+                    //-img.img-responsive(src=`${projectImage}` alt='')
+                    img.img-responsive(src=`./dist/images/home/${imageName}-smail.jpg` src2=`./dist/images/home/${imageName}.jpg` zoombox='project' alt=`${imageCaption}`)
+                    .wthree-pcatn
+                        h4 #{projectName}
+
+
+.work.ila-w3layouts
+    .container
+        .col-md-12.work-ila-left
+            h3.ila-title LMS Moodle Reports
+            //- include ../_work.pug
+            //- include ../_education.pug
+            //- p (pls click to the image to view the description)
+            p 
+                | Course list, Search course, Placement Test, Outstanding Tasks report for Staff, Outstanding Tasks report for teacher/TA, 
+                | Payslip (Teacher/TA only), Bank of hours (Teacher/TA only)
+                .clearfix
+        .col-md-12
+            ul
+                +showProject("Course list", "lmsCourse list", "List of course of teacher/TA/Student")
+                +showProject("Search course", "lmsCourse search","List of course with searching (not for student)")
+                +showProject("Placement Test", "lmsPlacement test","Placement test which daily booked of Tester")
+                +showProject("Outstanding Tasks report for Staff", "Lmsoutstandding tasks for staff","This report is using for Operation and RMT/TLM which list of courses tasks was completed by teacher/TA")
+                +showProject("Outstanding Tasks report for teacher/TA", "Lmsteacher-ta outstanding tasks - details","This report is using for teacher/TA which list of courses tasks was completed")
+                +showProject("Payslip (Teacher/TA only)", "Lmspayslip","Show Payslip (Teacher/TA only)")
+                +showProject("Bank of hours (Teacher/TA only)", "lmsbank of hours","Show Bank of hours (Teacher/TA only)")
+
+

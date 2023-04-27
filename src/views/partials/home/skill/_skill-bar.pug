@@ -1,0 +1,11 @@
+mixin showSkill(skillPercent, skillTitleColor, skillBarColor, skillLabel)
+    .skillbar(data-percent=`${skillPercent}`)
+        span.skillbar-title(style=`background: ${skillTitleColor};`) #{skillLabel}
+        p.skillbar-bar(style=`background: ${skillBarColor};`)
+        span.skill-bar-percent
+
+.skill-ilainfo
+    +showSkill('90', '#d35400', '#d35400', 'Business Process Improvement')
+    +showSkill('99', '#2980b9', '#3498db', 'Pricing Optimization')
+    +showSkill('80', '#2c3e50', '#2c3e50', 'Business Analysis Planning')
+    +showSkill('95', '#46465e', '#5a68a5', 'Teamwork')

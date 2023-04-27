@@ -1,0 +1,20 @@
+mixin showEducation(hideEducation, eduCertification, eduTitle, eduDescription)
+    .panel.panel-default
+        #headingOne.panel-heading(role='tab')
+            h4.panel-title.asd
+                a.pa_italic(role='button' data-toggle='collapse' data-parent='#accordion')
+                    span.glyphicon.glyphicon-plus(aria-hidden='true')
+                    i.glyphicon.glyphicon-minus(aria-hidden='true')
+                    |  #{eduCertification}
+        if hideEducation
+            #collapseOne.panel-collapse.collapse.in(role='tabpanel')
+        else
+            #collapseOne.panel-collapse.collapse(role='tabpanel')
+            .panel-body.panel_text
+                    h5 #{eduTitle}
+                    | #{eduDescription}
+
+#accordion1.panel-group.w3l_panel_group_faq(role='tablist')
++showEducation(false, "Payment long term","Daily cash, Daily cash - card, Daily cash - bank")
++showEducation(false, "ELT ILA Account","Teacher/TA salary Report")
++showEducation(false, "Monthly scheduled ","Monthly Revenue By Department, Monthly Revenue By Department (forecast), Unearned Fee, Monthly Revenue By Student")

@@ -1,0 +1,28 @@
+//- .lightbox
+//-     img(src='./dist/images/home/AiNhan-smail.jpg' src2='./dist/images/home/AiNhan.jpg' zoombox='skill')
+//-     img(src='./dist/images/home/AiNhan_01-smail.JPG' src2='./dist/images/home/AiNhan_01.JPG' zoombox='skill')
+//-     img(src='./dist/images/home/AiNhan_02-smail.JPG' src2='./dist/images/home/AiNhan_02.JPG' zoombox='skill')
+//-     img(src='./dist/images/home/AiNhan_03-smail.jpg' src2='./dist/images/home/AiNhan_03.jpg' zoombox='skill')
+//-     img(src='./dist/images/home/AiNhan_04-smail.JPG' src2='./dist/images/home/AiNhan_04.JPG' zoombox='skill')
+//-     img(src='./dist/images/home/AiNhan_05-smail.jpg' src2='./dist/images/home/AiNhan_05.jpg' zoombox='skill')
+//-     img(src='./dist/images/home/AiNhan_06-smail.JPG' src2='./dist/images/home/AiNhan_06.JPG' zoombox='skill')
+
+
+mixin showProject(projectName, imageName, imageCaption)
+    .col-md-4.col-sm-4.col-xs-4.ila-img
+                a.swipebox(href='javascript:void(0)' title=`${projectName}`)
+                    //-img.img-responsive(src=`${projectImage}` alt='')
+                    img.img-responsive(src=`./dist/images/home/${imageName}-smail.jpg` src2=`./dist/images/home/${imageName}.jpg` zoombox='skill' alt=`${imageCaption}`)
+                    .wthree-pcatn
+                        h4 #{projectName}
+.Projects
+    ul
+        +showProject("Campaign Conversion Report", "1.CampaignConversion", "View the conversion from need to new sales for each channel, campaign")
+        +showProject("Sales Qualifty Conversion", "2.SalesQualityConversion","View Sales Quality conversion by Group, Center, Product, Channel...Sales type")
+        +showProject("SMS Sent", "3.SMSSent","View the number of send-out-sms by EP/EC")
+        +showProject("Telemarketing Performance Dashboard", "4.TelemarketingPerformanceDashboard","Dashboard for Pipeline management by Telemarketing")
+        +showProject("Telemarketing Report", "5.TelemarketingReport","Daily Tracking Telemarketing qualification")
+        +showProject("Telemarketing In Pipeline", "5b.TelemarketingInPipeline","Show details list of Lead in Pipeline of Telemarketing handling")
+        +showProject("Sales Performance Dashboard", "6.SalesPerformanceDashboard","Dashboard for Pipeline management by Sales team")
+        +showProject("Actual Sales by Product", "7.SalesVsTarget","View Newsales performance details by EPs")
+        +showProject("Unsuccessful Tracking", "8.Unsuccessful","View details of Unsuccessful Lead by Reason")

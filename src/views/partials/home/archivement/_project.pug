@@ -1,0 +1,30 @@
+mixin showProject(projectName, imageName, imageCaption)
+    .col-md-6.col-sm-6.col-xs-6.ila-img
+                a.swipebox(href='javascript:void(0)' title=`${projectName}`)
+                    //-img.img-responsive(src=`${projectImage}` alt='')
+                    img.img-responsive(src=`./dist/images/home/${imageName}-smail.jpg` src2=`./dist/images/home/${imageName}.jpg` zoombox='project' alt=`${imageCaption}`)
+                    .wthree-pcatn
+                        h4 #{projectName}
+
+h3.ila-title ScreenShots
+.Projects
+    ul
+        +showProject("Class-Student profile", "1.erpStudentProfile", "Show current student list in 1 class")
+        +showProject("Reminder", "2erpReminder","Show reminder of all classes in center")
+        +showProject("TA Attendance record", "2erpTAattendance","Attendance record list by center, using to print out and record attendance of teacher/TA")
+        +showProject("CB summary by centers", "erpCB","Cambridge registration summary by center")
+        +showProject("List of student taking cambridge LT", "erpCambridge","List of student taking cambridge who pay cambridge fee seperate with tuition fee")
+        +showProject("Book & POS delivery by class", "erpBook","Show Book & POS delivery status by class")
+        +showProject("Classroom Usages", "erpClassroom","Classroom usages by center")
+        +showProject("Re-enrollment by class", "erpRe-enrollment by class","Show list of student by class who enrolled successfully in next class")
+        +showProject("Re-enrollment by program- detail", "erpRe-enrollment by program","Show list of student by programme who enrolled successfully in next class")
+        +showProject("Re-enrollment by TA /Teacher", "erpRe-enrollment by TA","Show list of student re-enrolled by TA teacher who enrolled successfully in next class")
+        +showProject("Teacher/TA schedule", "erpTeacher schedule","Teacher/TA teaching schedule by center")
+        +showProject("Daily cash", "erpDaily Cash","Payment collection detail by center and payment method by CASH")
+        +showProject("Daily cash - card", "erpDaily cash - card","Payment collection detail by center and payment method by Credit card")
+        +showProject("Daily cash - bank", "erpDaily cash - bank","Payment collection detail by center and payment method by Bank transfer")
+        +showProject("Teacher/TA salary", "erpTeacherSalary","Teacher/TA salary report")
+        +showProject("Monthly Revenue By Department", "erpMonthly Revenue By Department","Revenue report by center")
+        +showProject("Monthly Revenue By Department (forecast)", "erpMonthly Revenue By Department (forecast)","Revenue report by center (forecast fee earned in month)")
+        +showProject("Unearned Fee - ILA Student account", "erpUnearned Fee","ILA Account report detail by student")
+        +showProject("Monthly Revenue By Student", "erpMonthly Revenue By Student","Monthly revenue by student detail")

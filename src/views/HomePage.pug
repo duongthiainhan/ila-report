@@ -1,0 +1,20 @@
+extends BasePage
+
+//- extends block head on Base.page and any other from here
+//- block head
+block mainContent
+  .btn_w3slider
+    input#slide.w3slider-input(type='radio' name='slider' checked='')
+    input#slide2.w3slider-input(type='radio' name='slider')
+    input#slide3.w3slider-input(type='radio' name='slider')
+    input#slide4.w3slider-input(type='radio' name='slider')
+  
+  include partials/home/_home
+
+    label(for='slide')
+    label(for='slide2')
+    label(for='slide3')
+    label(for='slide4')
+  
+  //- .container
+  //-   p #{messageForEmChan}

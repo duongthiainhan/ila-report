@@ -1,0 +1,83 @@
+/*-- work --*/
+h3.ila-title.ila-title2 {
+	margin-top: 1em;
+	margin-bottom: 0.8em;
+}
+
+.panel-group {
+	margin-bottom: 0;
+}
+
+.pa_italic i {
+	left: -1em;
+	font-size: 11px;
+}
+
+.pa_italic span {
+	display: none;
+}
+
+.collapsed span {
+	display: inline-block;
+	left: -1em;
+	font-size: 11px;
+}
+
+.collapsed i {
+	display: none;
+}
+
+.panel-heading {
+	padding: 0;
+}
+
+.panel-title>a {
+	font-size: 1em;
+	color: #f78800;
+	text-transform: capitalize;
+	text-decoration: none;
+	padding: 10px 30px;
+	display: block;
+}
+
+.panel-default {
+	border-color: #FFF;
+	background: #f5f5f5;
+}
+
+.panel-default>.panel-heading {
+	border-color: #FFF;
+	color: #212121;
+	background-color: #fff;
+}
+
+.panel-body {
+	padding: 1.0em 1.0em 0.1em;
+	font-size: 14px;
+	line-height: 1.8em;
+	color: #999;
+	background: #efefef;
+}
+// padding: <top right bottom left>
+
+.panel-body h5 {
+	color: #333;
+	font-size: 1.2em;
+	//margin-bottom: .5em;
+}
+
+a.pa_italic label {
+	cursor: pointer;
+	font-weight: 500;
+}
+
+a.pa_italic:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+	border-top-color: transparent;
+}
+
+/*-- //work --*/

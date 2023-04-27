@@ -1,0 +1,26 @@
+mixin showProject(projectName, imageName, imageCaption)
+    .col-md-4.col-sm-4.col-xs-4.ila-img
+                a.swipebox(href='javascript:void(0)' title=`${projectName}`)
+                    //-img.img-responsive(src=`${projectImage}` alt='')
+                    img.img-responsive(src=`./dist/images/home/${imageName}-smail.jpg` src2=`./dist/images/home/${imageName}.jpg` zoombox='project' alt=`${imageCaption}`)
+                    .wthree-pcatn
+                        h4 #{projectName}
+
+
+.work.ila-w3layouts
+    .container
+        .col-md-12.work-ila-left
+            h3.ila-title 2. Academic & Product
+            //- include ../_work.pug
+            //- include ../_education.pug
+            //- p (pls click to the image to view the description)
+            p.title1 Academic - KPI
+            p 
+                | Monitor the number of teaching hours of the teacher compared to the plan; number of classes, number of classes, teacher performance,…
+                .clearfix
+        .col-md-12
+            ul
+                img(src='./dist/images/home/biAcademicKPI - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biAcademicKPI.png' zoombox='')
+                img(src='./dist/images/home/biAcademicKPI2 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biAcademicKPI2.png' zoombox='')
+                img(src='./dist/images/home/biAcademicKPI3 - Copy.png' width="370px" height = "220px" src2='./dist/images/home/biAcademicKPI3.png' zoombox='')
+                

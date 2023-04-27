@@ -1,0 +1,53 @@
+mixin showItem(itemId, hideExp, workTitle, workDescription)
+    if hideExp
+        .panel-collapse.collapse.in(role='tabpanel' id=`${itemId}`)
+    else
+        .panel-collapse.collapse(role='tabpanel' id=`${itemId}`)
+        //- +showItem(workTitle, workDescription)
+        .panel-body.panel_text
+            h5 #{workTitle}
+            for item in workDescription
+                p= item
+
+mixin showExprience(tabName, workTime, workTitle, workDescription)
+    .panel-heading(role='tab' id=`${tabName}`)
+        h4.panel-title.asd
+            a.pa_italic(role='button' data-toggle='collapse' data-parent='#accordion')
+                span.glyphicon.glyphicon-plus(aria-hidden='true')
+                i.glyphicon.glyphicon-minus(aria-hidden='true')
+                |  #{workTime}
+
+h3.ila-title ERP REPORTS
+.panel.panel-default
+    +showExprience("exp1", "Course adminstration")
+    +showItem('collapseOne', false, "Class-Student profile",['Show current student list in 1 class'])
+    +showItem('collapseOne', false, "Reminder",['Show reminder of all classes in center'])
+    +showItem('collapseOne', false,"TA Attendance record",['Attendance record list by center, using to print out and record attendance of teacher/TA'])
+    +showItem('collapseOne', false,"CB summary by centers",['Cambridge registration summary by center'])
+    +showItem('collapseOne', false,"List of student taking cambridge LT",['List of student taking cambridge who pay cambridge fee seperate with tuition fee'])
+    +showItem('collapseOne', false,"Book & POS delivery by class",['Classroom usages by center'])
+    +showItem('collapseOne', false,"Classroom Usages",['This report is obsoleted, no data show up - this report show percent pass and failed result of student who teach by this teacher/TA'])
+
+.panel.panel-default
+    +showExprience("exp2",  "Reenrollment")
+    +showItem('collapseOne', false, "Re-enrollment by class",['Show list of student by class who enrolled successfully in next class'])
+    +showItem('collapseOne', false, "Re-enrollment by program- detail",['Show list of student by programme who enrolled successfully in next class'])
+    +showItem('collapseOne', false, "Re-enrollment by TA /Teacher",['Show list of student re-enrolled by TA teacher who enrolled successfully in next class'])
+
+.panel.panel-default
+    +showExprience("exp3", "Schedule")
+    +showItem('collapseOne', false, "Teacher/TA schedule",['Teacher/TA teaching schedule by center'])
+
+.panel.panel-default
+    +showExprience("exp4", "Payment long term")
+    +showItem('collapseOne', false, "Daily cash",['Payment collection detail by center and payment method by CASH'])
+    +showItem('collapseOne', false, "Daily cash - card",['Payment collection detail by center and payment method by Credit card'])  
+    +showItem('collapseOne', false, "Daily cash - bank",['Payment collection detail by center and payment method by Bank transfer'])      
+
+.panel.panel-default
+    +showExprience("exp5", " Account/Finance")
+    +showItem('collapseOne', false, "Teacher/TA salary",['Teacher\TA salary report'])
+    +showItem('collapseOne', false, "Monthly Revenue By Department",['Revenue report by center'])
+    +showItem('collapseOne', false, "Monthly Revenue By Department (forecast)",['Revenue report by center (forecast fee earned in month)'])    
+    +showItem('collapseOne', false, "Unearned Fee - ILA Student account all long term",['Payment collection detail by center and payment method by Bank transfer'])
+    +showItem('collapseOne', false, "Monthly Revenue By Student",['Monthly revenue by student detail'])      

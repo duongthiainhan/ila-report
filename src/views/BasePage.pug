@@ -1,0 +1,47 @@
+block variables
+  - const ilaAddress = '146 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3, TPHCM';
+  - const ilaHotline = '1900 6965';
+  - const ilaEmail = 'info@ila.edu.vn';
+  - const ilaMap = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125415.02075953153!2d106.66363449837434!3d10.794501389618128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f313591b715%3A0xf7750b130d6c13be!2zSUxBIC0gTmd1eeG7hW4gxJDDrG5oIENoaeG7g3U!5e0!3m2!1svi!2s!4v1639448804108!5m2!1svi!2s';
+  - const ilaAvatar = "./dist/images/ila-logowhite.png";
+  - const company = "ILA";
+  - const title = `${company} Reports Consolidation`;
+  - const hideExp = true;
+  - const hideEducation = true;
+  - const messageForEmChan = "Em chan cố nhên hen <3 <3 <3";
+
+doctype html 
+html
+  head
+    block head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+      meta(name='keywords' content=`${title}`)
+      link(rel='shortcut icon' type='image/png' href='./dist/images/favicon.ico')
+      link(rel='stylesheet' href='./dist/assets/css/bootstrap.css')
+      link(rel='stylesheet' href='./dist/assets/css/swipebox.css')
+      link(rel='stylesheet' href='./dist/assets/css/zoombox.css')
+      link(rel='stylesheet' href='./dist/assets/style.css')
+      link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css')
+      link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Kurale')
+      link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic')
+      title #{title}
+  
+  body 
+    // Base header
+    include components/_header
+    
+    // Base content
+    block mainContent
+
+    // Base Footer
+    include components/_footer
+ 
+    //- all js files in 'public'   
+    script(src='./dist/assets/js/jquery-2.2.3.min.js')
+    script(src='./dist/assets/js/skill.bars.jquery.js')
+    script(src='./dist/assets/js/jquery.swipebox.min.js')
+    script(src='./dist/assets/js/bootstrap.js')
+    script(src='./dist/assets/js/zoombox.js')
+    script(src='./dist/assets/script.js')
