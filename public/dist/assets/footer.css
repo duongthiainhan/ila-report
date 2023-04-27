@@ -1,0 +1,32 @@
+/*-- footer --*/
+.ila-footer {
+  text-align: center;
+  padding-top: 6em;
+}
+
+.ila-footer p a {
+  color: #f78800;
+}
+
+.ila-footer p a:hover {
+  color: #fff;
+}
+
+.skills-w3lsleft h4 {
+  color: #f78800;
+}
+
+.zoombox-text {
+  color: #000000;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 2rem;
+  /* border: 2px solid #ffffff; */
+  opacity: 1;
+  background-color: #c8c933;
+}
+
+/*-- //footer --*/

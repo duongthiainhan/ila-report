@@ -7,6 +7,7 @@
 const express = require("express");
 const path = require("path");
 const moment = require('moment');
+// const ngrok = require('ngrok');
 
 /**
  * App Variables
@@ -72,6 +73,12 @@ app.get('*', (req, res, next) => {
 /**
  * Server Activation
  */
-app.listen(port, () => {
+app.listen(port, (err) => {
+	if (err) return console.log(`Something bad happened: ${err}`);
     console.log(`Listening to requests on http://localhost:${port}`);
+
+    // ngrok.connect(port, function (err, url) {
+    //     console.log(`Node.js local server is publicly-accessible at ${url}`);
+    // });
+    
 });

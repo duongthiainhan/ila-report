@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "dev": "nodemon ./server.js",
+    "start": "nodemon ./server.js",
     "ui": "browser-sync start --config bs-config.js"
   },
   "keywords": [],

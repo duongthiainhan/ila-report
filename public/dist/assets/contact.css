@@ -1,0 +1,116 @@
+/*-- contact --*/
+.contact-wthree-left iframe {
+  width: 100%;
+  min-height: 19.9em;
+  border: none;
+}
+
+.styled-input.ila-styled-input-top {
+  margin-top: 0;
+}
+
+.faddressw3-ilainfo {
+  margin-top: 2em;
+  border: 1px solid #fff;
+  padding: 2em;
+}
+
+.faddress-w3left {
+  float: left;
+  width: 49%;
+  position: relative;
+}
+
+.faddress-w3right {
+  float: right;
+}
+
+.contact p {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact p a {
+  color: #fff;
+}
+
+.contact p a:hover {
+  color: #f58700;
+}
+
+.faddress-w3left:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  right: -17px;
+}
+
+/*-- input-effect --*/
+.contact-wthree-right input[type=text],
+.contact-wthree-right input[type=email] {
+  width: 100%;
+  color: #fff;
+  background: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  border: 1px solid #8C8C8C;
+  -webkit-appearance: none;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.contact-wthree-right textarea {
+  width: 100%;
+  background: none;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  padding: 0.8em 1em;
+  border: 1px solid #8C8C8C;
+  min-height: 13em;
+  -webkit-appearance: none;
+}
+
+.contact-wthree-right input[type=submit] {
+  outline: none;
+  color: #fff;
+  padding: 0.6em 1em;
+  font-size: 1.1em;
+  margin: 1em 0 0 0;
+  -webkit-appearance: none;
+  background: #f78800;
+  border: 2px solid #f78800;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  transition: 0.5s all;
+  width: 100%;
+}
+
+.contact-wthree-right input[type=submit]:hover {
+  background: none;
+  color: #f78800;
+}
+
+::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff !important;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff !important;
+}
+
+:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+/*-- //contact --*/

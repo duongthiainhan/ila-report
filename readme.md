@@ -98,8 +98,14 @@ npm install
 gulp watch
 
 // start server on port 8000
-npm run dev
+npm start
 
 // start app on port 3000
 npm run ui
+
+// sharing
+lt --port 3000 --subdomain ila-report1
+
+link: https://ila-report.loca.lt/
+
 ```
