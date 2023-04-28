@@ -6,7 +6,6 @@
  */
 const express = require("express");
 const path = require("path");
-// const moment = require('moment');
 // const ngrok = require('ngrok');
 
 /**
@@ -14,10 +13,6 @@ const path = require("path");
  */
 const app = express();
 const port = process.env.PORT || "8000";
-// app.locals.moment = moment;
-// app.locals.ucfirst = function(value){
-//     return value.charAt(0).toUpperCase() + value.slice(1);
-// };
 
 /**
  *  App Configuration
@@ -31,7 +26,6 @@ app.use(express.static(path.join(__dirname, "/upload")));
  * Routes Definitions
  */
 app.get("/", (req, res) => {
-    // res.render("HomePage", { homeTitle: "Home", year: moment().format('YYYY') });
 	res.render("HomePage", { homeTitle: "Home", year: 2023 });
 });
 
