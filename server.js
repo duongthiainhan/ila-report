@@ -31,7 +31,8 @@ app.use(express.static(path.join(__dirname, "/upload")));
  * Routes Definitions
  */
 app.get("/", (req, res) => {
-    res.render("HomePage", { homeTitle: "Home", year: moment().format('YYYY') });
+    // res.render("HomePage", { homeTitle: "Home", year: moment().format('YYYY') });
+	res.render("HomePage", { homeTitle: "Home", year: 2023 });
 });
 
 app.get("/layout", (req, res) => {
