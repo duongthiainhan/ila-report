@@ -17,6 +17,7 @@ const port = process.env.PORT || "8000";
 /**
  *  App Configuration
  */
+app.engine('pug', require('pug').__express)
 app.set("views", path.join(__dirname, "./src/views"));
 app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, "/public")));
