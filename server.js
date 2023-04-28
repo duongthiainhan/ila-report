@@ -6,7 +6,7 @@
  */
 const express = require("express");
 const path = require("path");
-const moment = require('moment');
+// const moment = require('moment');
 // const ngrok = require('ngrok');
 
 /**
@@ -14,10 +14,10 @@ const moment = require('moment');
  */
 const app = express();
 const port = process.env.PORT || "8000";
-app.locals.moment = moment;
-app.locals.ucfirst = function(value){
-    return value.charAt(0).toUpperCase() + value.slice(1);
-};
+// app.locals.moment = moment;
+// app.locals.ucfirst = function(value){
+//     return value.charAt(0).toUpperCase() + value.slice(1);
+// };
 
 /**
  *  App Configuration
